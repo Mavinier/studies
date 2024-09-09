@@ -18,7 +18,7 @@ print(password == confirmPassword)
 # Otherwise, it should print “You are doing great!”
 
 
-userBodyTemperature = 37.1
+userBodyTemperature = 36
 
 if(userBodyTemperature < 36.4):
   print("Too low!")
