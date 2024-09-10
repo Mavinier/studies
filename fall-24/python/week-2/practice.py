@@ -3,9 +3,9 @@
 # Input user name, password and confirm password in three strings,
 # check if the two password matches (same).
 
-name = "Marlon Mavinier"
-password = "testing2strings"
-confirmPassword = "testing2strings"
+name = input("Input your name: ")
+password = input("Input your password: ")
+confirmPassword = input("Confirm your password: ")
 
 print(password == confirmPassword)
 
@@ -18,7 +18,7 @@ print(password == confirmPassword)
 # Otherwise, it should print “You are doing great!”
 
 
-userBodyTemperature = 36
+userBodyTemperature = float(input("Input your body temperature: "))
 
 if(userBodyTemperature < 36.4):
   print("Too low!")
@@ -30,7 +30,7 @@ else:
 
 # QUESTION - 3
 
-grade = 80.1
+grade = int(input("Input your grade: "))
 
 if(grade > 10 and grade < 20):
   print("Better stay at home")
