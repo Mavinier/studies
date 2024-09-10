@@ -36,5 +36,4 @@ width = float(input("Inform the width: "))
 area = lenght * width
 perimeter = 2 * (lenght + width)
 
-print("The area is: ", area)
-print("The perimeter is: ", perimeter)
+print(f"The area is: {area}, the peremiter is: {perimeter}")
