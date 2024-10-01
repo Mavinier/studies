@@ -3,12 +3,14 @@
 # Input user name, password and confirm password in three strings,
 # check if the two password matches (same).
 
-name = input("Input your name: ")
-password = input("Input your password: ")
-confirmPassword = input("Confirm your password: ")
+# name = input("Input your name: ")
+# password = input("Input your password: ")
+# confirmPassword = input("Confirm your password: ")
 
-print(password == confirmPassword)
-
+# if(password == confirmPassword):
+#   print("Login successful")
+# else:
+#   print("Wrong Credentials")
 
 # QUESTION - 2
 
@@ -18,27 +20,28 @@ print(password == confirmPassword)
 # Otherwise, it should print “You are doing great!”
 
 
-userBodyTemperature = float(input("Input your body temperature: "))
+# userBodyTemperature = float(input("Input your body temperature in Celsius: "))
 
-if(userBodyTemperature < 36.4):
-  print("Too low!")
-elif(userBodyTemperature > 37.2):
-  print("Too high!")
-else:
-  print("You are doing great!")
+# if(userBodyTemperature < 36.4):
+#   print("Too low!")
+# elif(userBodyTemperature > 37.2):
+#   print("Too high!")
+# else:
+#   print("You are doing great!")
 
 
 # QUESTION - 3
 
 grade = int(input("Input your grade: "))
 
-if(grade > 10 and grade < 20):
-  print("Better stay at home")
-elif(grade > 20 and grade < 50):
-  print("Pass grade")
-elif(grade > 50 and grade < 70):
-  print("C Grade")
-elif(grade > 70 and grade < 80):
-  print("B Grade")
-else:
-  print("A Grade")
+match grade:
+  case grade if 10  < grade < 20:
+    print("Better stay at home")
+  case grade if 20 <= grade < 50:
+    print("Pass grade")
+  case grade if 50 <= grade < 70:
+    print("C Grade")
+  case grade if 70 <= grade < 80:
+    print("B Grade")
+  case _:
+    print("A Grade")

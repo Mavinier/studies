@@ -4,7 +4,7 @@ if (radius <= 0 ):
   print("Area can not be calculated")
 else:
   area = (radius ** 2) * 3.14159 
-  perimeter = 2 * 3.14159
+  perimeter = 2 * 3.14159 * radius
 
 print("The area is:", area)
 print("The perimeter is:", perimeter)
