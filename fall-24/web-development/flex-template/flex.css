@@ -1,0 +1,64 @@
+/* Your CSS here */
+
+.flex-container { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-color: red;
+}
+
+nav div:hover{
+    background-color: aqua;
+}
+
+nav div:nth-of-type(even){
+    flex:1;
+    cursor: pointer;
+}
+
+nav div:nth-of-type(odd){
+    flex:1;
+    cursor: pointer;
+}
+
+/* /Your CSS */
+
+body {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto 800px auto;
+}
+
+main {
+    border: 2px solid slategrey;
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+}
+
+nav .nav-item {
+    border: 2px solid slategrey;
+    padding: 0.5rem;
+}
+
+article .ad {
+    display: flex;
+    align-items: center;
+    border: 2px solid teal;
+    border-radius: 10%;
+    margin-bottom: 16px;
+    background: yellowgreen;
+}
+
+article .ad p {
+    text-align: center;
+    padding: 0 0.25rem;
+}
+
+article p {
+    padding-right: 1rem;
+    margin-top: 0;
+}

@@ -1,0 +1,14 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container {
+    column-width: 250px;
+    column-rule: 5px solid black;
+    column-gap: 25px;
+}
+
+h2 {
+    column-span: all;
+}
